@@ -119,7 +119,8 @@ class MainActivity : AppCompatActivity() {
 
 
         when(lemonadeState){
-            SELECT -> {
+
+           SELECT -> {
                 setViewElements()
                 lemonadeState = SQUEEZE
 
@@ -138,8 +139,8 @@ class MainActivity : AppCompatActivity() {
             }
             RESTART ->{
                 setViewElements()
-                lemonadeState = SELECT
                 squeezStep = lemonTree.pick()
+                lemonadeState = SELECT
             }
         }
     }
